@@ -1,0 +1,193 @@
+<html>
+    <head>
+        <title> Modal Advanced
+        </title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script> 
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+        
+    
+
+    </head>
+    <body>
+
+        <a href="#advanced" data-toggle="modal" role="button" class="btn btn-danger">click</a>
+<div id="advanced" class="modal hide fade modal-lg"  role="dialog" aria-labelledby="advancedSort" >
+<div class="modal-dialog">
+    <div class="modal-content">
+      
+    <div class="modal-header">
+     
+     <ul class="nav nav-pills pull-right">
+       <li class="active">
+         <a href="#date" data-toggle="pill">Date</a>
+       </li>
+       <li><a href="#relevance" data-toggle="pill">Rel</a></li>
+       <li><a href="#hobbies" data-toggle="pill">Hobbies</a></li>
+       <li><a href="#preferences" data-toggle="pill">Pref</a></li>
+       <li><a href="#dealership" data-toggle="pill">Deal</a></li>
+       <li><a href="#finish" data-toggle="pill">Finish</a></li>
+     </ul>
+  <button type="button" class="close" data-dismiss="modal">&times;</button> 
+ </div>
+
+ <div class="modal-body">
+      <div class="row-fluid">
+   <div class="tab-content">
+    <div class="tab-pane active" id="date">
+       <div class="progress">
+        <div class="progress-bar progress-bar-animated progress-bar-striped bg-danger" style="width: 5%;">
+          <h5>0% completed</h5>
+        </div>
+       </div>
+       <form>
+        <div class="controls controls-row">
+   <select class="form-control">
+<option>Date</option>
+<option>Today</option>
+<option>Yesterday</option>
+<option>Last Week</option>
+<option>Last Month</option>
+</select>
+        </div><br>
+<button type="submit" class="btn btn-warning">Next</button>
+</form>
+      </div>
+      <div class="tab-pane" id="relevance">
+        <div class="progress">
+          <div class="progress-bar progress-bar-animated progress-bar-striped bg-danger" style="width: 20%;">
+            <h5>20% completed</h5>
+          </div>
+         </div>
+         <form>
+           <fieldset>
+                 <div class="controls controls-row">
+                    <select  class="form-control">
+          <option value="">Relevance Factor</option>
+          <option value="">Containing</option>
+          <option value="">Starting with</option>
+          <option value="">Enging with</option>
+         </select>
+         <br><select class="form-control">
+          <option value="">Sorting</option>
+          <option value="">Relevant on top</option>
+          <option value="">Relevant on bottom</option>
+         </select>
+                 </div><br>
+             <button type="submit" class="btn btn-warning">next</button>
+           </fieldset>
+         </form>
+      </div>
+      <div class="tab-pane" id="hobbies">
+        <div class="progress">
+          <div class="progress-bar progress-bar-animated progress-bar-striped bg-danger" style="width: 40%;">
+            <h5>40% completed</h5>
+          </div>
+         </div>
+        <form>
+          <fieldset>
+                <div class="controls controls-row">
+                   <select  class="form-control">
+         <option value="">playing games</option>
+         <option value="">Containing</option>
+         <option value="">Starting with</option>
+         <option value="">Enging with</option>
+        </select>
+        <br><select class="form-control">
+         <option value="">studying</option>
+         <option value="">Relevant on top</option>
+         <option value="">Relevant on bottom</option>
+        </select>
+                </div><br>
+            <button type="submit" class="btn btn-warning">next</button>
+          </fieldset>
+        </form>
+     </div>
+     <div class="tab-pane" id="preferences">
+      <div class="progress">
+        <div class="progress-bar progress-bar-animated progress-bar-striped bg-danger" style="width: 60%;">
+          <h5>60% completed...</h5>
+        </div>
+       </div>
+      <form>
+        <fieldset>
+              <div class="controls controls-row">
+                 <select  class="form-control">
+       <option value="">comics</option>
+       <option value="">Containing</option>
+       <option value="">Starting with</option>
+       <option value="">Enging with</option>
+      </select>
+      <br><select class="form-control">
+       <option value="">anime</option>
+       <option value="">Relevant on top</option>
+       <option value="">Relevant on bottom</option>
+      </select>
+              </div><br>
+          <button type="submit" class="btn btn-warning">next</button>
+        </fieldset>
+      </form>
+   </div>
+      <div class="tab-pane" id="dealership">
+        <div class="progress">
+          <div class="progress-bar progress-bar-animated progress-bar-striped bg-danger" style="width: 80%;">
+            <h5>80% completed... Just one step remaining!</h5>
+          </div>
+         </div>
+       <form>
+           <fieldset>
+                 <div class="controls controls-row">
+                    <label class="form-control">Location</label>
+         <br><select class="form-control">
+          <option>City</option>
+          <option>Los Angeles</option>
+          <option>Tokyo</option>
+          <option>New York</option>
+          <option>London</option>
+         </select>
+                 </div><br>
+             <button type="submit" class="btn btn-warning">Finish</button>
+           </fieldset>
+         </form>
+      </div>
+
+      <div class="tab-pane" id="finish">
+        <div class="progress">
+          <div class="progress-bar progress-bar-animated progress-bar-striped bg-danger" style="width: 100%;">
+            <h5>100% completed...</h5>
+          </div>
+         </div>
+       <h3>Thanks for your harwork!</h3>
+      </div>
+      
+     </div>      
+      </div>
+ </div>
+    
+    </div>
+
+</div>
+</div>
+
+    </body>
+</html>

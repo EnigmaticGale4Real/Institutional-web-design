@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <title>validate email and password
+        </title>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+            // function validate(){
+            //     var x=document.myform.name.value;
+            //     var x=document.myform.password.value;
+            //     if(name==null || name==""){
+            //         alert("fill the name,you idiot");
+            //         return false;
+            //     }
+            //     else if(password==null || password=="" || password.length<6){
+            //         alert("fill the password with more than six words so that it is not easy to crack,you idiot");
+            //         return false;
+            //     }
+            //     else{
+            //         return true;
+            //     }
+            // }
+            // function validate(){
+            //     var firstpassword=document.myform.password.value;
+            //     var secondpassword=document.myform.password2.value;
+            //     if(firstpassword==secondpassword){
+            //         return true;
+            //     }
+            //     else {
+            //         alert("passwords do not match");
+            //     }
+            // }
+            // function validate(){
+            //     var num =document.myform.num.value;
+            //     if(isNaN(num)){
+            //         document.getElementById("numlock").innerHTML="enter numbers only";
+            //         return false;
+            //     }
+            //     else {
+            //         return true;
+            //     }
+            // }
+            function validate(){
+                var x=document.myform.email.value;
+                var at=x.indexOf("@");
+                var dot=x.lastindexOf(".");
+                if(at<1 || dot<at+2 || dot+2>x.length){
+                    alert("enter proper email address \n atposition"+at+"\n dotposition:"+dot);
+                    return false;
+                
+                }
+            }
+        </script>
+    </head>
+  
+    <body>
+ 
+
+<!-- <form name="myform" onclick="Blog.html" method="post" onsubmit="return validate()">
+   Name <input name="name" type="text"><br><br>
+    Password<input name="password" type="password"><br><br>
+    <input type="submit" value="submit"><br><br>
+</form> 
+
+<form name="myform" onclick="first.html" method="post" onsubmit="return validate()">
+    old password <input name="password" type="password"><br><br>
+     new Password<input name="password2" type="password"><br><br>
+     <input type="submit" value="submit"><br><br> -->
+<!-- </form>
+
+<form name="myform" onclick="first.html" method="post" onsubmit="return validate()">
+Numeric values<input name="num" type="text">
+<span id="numlock">
+    </span>
+    <input type="submit" value="submit"><br><br>
+</form>
+    </body> -->
+
+    <form name="myform" onclick="first.html" method="post" onsubmit="return validate();">
+
+       Email <input name="email" type="text">
+       <input type="submit" value="submit">
+
+    </form>   
+
+</html>

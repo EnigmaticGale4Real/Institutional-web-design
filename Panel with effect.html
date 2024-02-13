@@ -1,0 +1,438 @@
+<html>
+    <head>
+        <title>
+            Panel with effect
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">      <link rel="stylesheet" href="assets/js/chosen/docsupport/prism.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.2/chosen.css">
+  <script>
+    $(function(){
+$('.panel').hover(function(){
+       $(this).find('.panel-footer').slideDown(250);
+},function(){
+    $(this).find('.panel-footer').slideUp(250);
+     });
+    
+    });
+ 
+</script>
+
+</head>
+
+<body>
+
+<style>
+    
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+body{
+    margin-top: 30px;
+}
+
+.stepwizard-step p{
+    color: #666;
+    margin-top: 0px;
+}
+
+.stepwizard-row{
+display: table-row;
+}
+
+.stepwizard{
+display: table;
+position: relative;
+}
+
+.stepwizard-step button[disabled]{
+/*hgf*/
+}
+
+.stepwizard .button.disabled, .stepwizard .btn[disabled], .stepwizard .fieldset[disabled] .btn{
+    opacity: 1 !important;
+    color: #bbb;
+}
+
+.stepwizard-row:before{
+
+content: " ";
+width: 330%;
+height: 1px;
+z-index: 0;
+background-color: red;
+position: absolute;
+top: 14px;
+bottom: 0;
+}
+
+.stepwizard-step{
+    position: relative;
+    display: table-cell;
+    text-align: center;
+
+}
+
+.btn-circle{
+    height: 30px;
+    width: 30px;
+    line-height: 1.4;
+    border-radius: 10px;
+}
+
+
+
+
+</style>
+
+<div class="container">
+
+    <div class="stepwizard">
+
+        <div class="stepwizard-row setup-panel">
+
+            <div class="stepwizard-step col-xs-3">
+                <a href="#step-1"  type="button" class="btn btn-success btn-circle btn-default">1</a>
+                <p>Hobbies</p>
+            </div>
+
+            <div class="stepwizard-step col-xs-3">
+                <a href="#step-2"  type="button" class="btn btn-success btn-circle btn-default" disabled="disabled" >2</a>
+                <p>Housing</p>
+            </div>
+
+            <div class="stepwizard-step col-xs-3">
+                <a href="#step-3"  type="button" class="btn btn-success btn-circle btn-default" disabled="disabled" >3</a>
+                <p>Occupation</p>
+            </div>
+
+            <div class="stepwizard-step col-xs-3">
+                <a href="#step-4"  type="button" class="btn btn-success btn-circle btn-default" disabled="disabled" >4</a>
+                <p>Family</p>
+            </div>
+
+            
+
+        </div>
+
+    </div>
+
+</div>
+
+<center>
+    <div class="container">
+        <form role="form">
+            
+            <div class="tab-content">
+                <div class="tab-pane active" id="step-1">
+            <div class="panel panel-primary setup-content">
+        
+                <div class="panel-heading ">
+                    <h3 class="panel-title">
+                        Hobbies
+                    </h3>
+                </div>
+        
+                <div class="panel-body" id="step-1">
+                    <div class="form group">
+                        <label>What are your hobbies?</label><br>
+                        <input type="radio" name="hobbies" maxlength="100"/>
+                        My hobbies are playing game, watching basketball, reading manga and watching anime.<br>
+                    </div>
+        
+                    <div class="form-group">
+                        <label>What are your other hobbies?</label><br>
+                        <input type="radio" name="hobbies" maxlength="100"/>
+                        Others (Please specify)<br>
+                        <textarea name="hobbies" rows="3" cols="30"></textarea>
+                    </div>
+                    <a href="#step-2" ><button class="btn btn-danger nxtbtn pull-right" type="button">Next</button>
+                    </a>
+                        
+                        
+                        <br><br><br>
+                    </a>
+                    
+                </div>
+            </div>
+                </div>
+            </div>
+            
+            <div class="tab-content">
+                <div class="tab-pane active" id="step-2">
+
+            <div class="panel panel-primary setup-content">
+        
+                <div class="panel-heading ">
+                    <h3 class="panel-title">
+                        Housing
+                    </h3>
+                </div>
+        
+                <div class="panel-body" id="step-2">
+                    <div class="form group">
+                        <label>What is your Housing status?</label><br>
+                        <input type="radio" name="hobbies" maxlength="100"/>
+                        I have an apartment or house to live in.<br>
+                    </div>
+        
+                    <div class="form-group">
+                        <label>Housing status other than that.</label><br>
+                        <input type="radio" name="hobbies" maxlength="100"/>
+                        Others (Please specify)<br>
+                        <textarea name="hobbies" rows="3" cols="30"></textarea>
+                    </div>
+        
+                    <a href="#step-3" ><button class="btn btn-danger nxtbtn pull-right" type="button">Next</button>
+                    </a>
+                    <a href="#step-1">
+                        <button class="btn btn-success nxtbtn pull-left" type="button">Prev</button>
+                    </a>
+                    <br><br><br>
+                </div>
+            </div>
+                </div>
+            </div>
+
+            <div class="tab-content">
+                <div class="tab-pane active" id="step-3">
+
+            <div class="panel panel-primary setup-content">
+        
+                <div class="panel-heading ">
+                    <h3 class="panel-title">
+                        Occupatiom
+                    </h3>
+                </div>
+        
+                <div class="panel-body" id="step-3">
+                    <div class="form group">
+                        <label>what is your occupation?</label><br>
+                        <input type="radio" name="hobbies" maxlength="100"/>
+                        Teacher, Businessman, Freelancer or Government job.<br>
+                    </div>
+        
+                    <div class="form-group">
+                        <label>Other occupation???</label><br>
+                        <input type="radio" name="hobbies" maxlength="100"/>
+                        Others (Please specify)<br>
+                        <textarea name="hobbies" rows="3" cols="30"></textarea>
+                    </div>
+        
+                    <a href="#step-4" ><button class="btn btn-danger nxtbtn pull-right" type="button">Next</button>   
+                    </a>
+                    <a href="#step-2">
+                        <button class="btn btn-success nxtbtn pull-left" type="button">Prev</button>
+                    </a>
+                    <br><br><br>
+                </div>
+            </div>
+                </div>
+            </div>
+            
+            <div class="tab-content">
+                <div class="tab-pane active" id="step-4">
+
+            <div class="panel panel-primary setup-content">
+        
+                <div class="panel-heading ">
+                    <h3 class="panel-title">
+                        Family
+                    </h3>
+                </div>
+        
+                <div class="panel-body" id="step-4">
+                    <div class="form group">
+                        <label>How many family members do you have?</label><br>
+                        <input type="radio" name="hobbies" maxlength="100"/>
+                        I have Mom, Dad and a Sister.<br>
+                    </div>
+        
+                    <div class="form-group">
+                        <label>Other relatives living with you?</label><br>
+                        <input type="radio" name="hobbies" maxlength="100"/>
+                        Others (Please specify)<br>
+                        <textarea name="hobbies" rows="3" cols="30"></textarea>
+                    </div>
+        
+                    <button class="btn btn-danger nxtbtn pull-right" type="button">Next</button>
+                    <a href="#step-3">
+                        <button class="btn btn-success nxtbtn pull-left" type="button">Prev</button>
+                    </a>
+                    <br><br><br>
+                </div>
+            </div>
+                </div>
+            </div>
+        
+        </form>
+    </div>
+    
+    
+    
+ <section>
+    <div class="container">
+     
+            <div class="row">
+
+            <div class="col">
+
+    <div class="panel setup-content">
+ 
+        <div class="panel-heading  bg-danger">
+
+             <h1 class="panel-title">Hover me
+
+             </h1>
+
+          </div>
+
+           <div class="panel-body">
+            <h3>
+                if you hover, footer will slide down
+
+              </h3>
+              <p> footer will slide up and down as you hover on it and the animation will be back and forth.</p>
+             </div>
+
+                    <div class="panel-footer">
+                       <a href="#"><span class="badge bg-danger">40</span></a><br><br><br>
+                       <a href="#"><span class="badge bg-danger">40</span></a><br><br><br>
+                       <a href="#"><span class="badge bg-danger">40</span></a><br><br><br>
+                       <a href="#"><span class="badge bg-danger">40</span></a><br><br><br>
+                     </div>
+
+     </div>
+
+
+</div>
+
+<div class="col">
+
+    <div class="panel setup-content">
+ 
+        <div class="panel-heading bg-success">
+
+             <h1 class="panel-title">Hover me
+
+             </h1>
+
+          </div>
+
+           <div class="panel-body">
+            <h3>
+                if you hover, footer will slide down
+
+              </h3>
+              <p> footer will slide up and down as you hover on it and the animation will be back and forth.</p>
+             </div>
+
+                    <div class="panel-footer">
+                       <a href="#"><span class="badge badge-success">40</span></a><br><br><br>
+                       <a href="#"><span class="badge badge-success">40</span></a><br><br><br>
+                       <a href="#"><span class="badge badge-success">40</span></a><br><br><br>
+                       <a href="#"><span class="badge badge-success">40</span></a><br><br><br>
+                     </div>
+
+     </div>
+
+
+</div>
+
+
+
+<div class="col">
+
+    <div class="panel setup-content">
+ 
+        <div class="panel-heading bg-warning">
+
+             <h1 class="panel-title">Hover me
+
+             </h1>
+
+          </div>
+
+           <div class="panel-body">
+                  <h3>
+                    if you hover, footer will slide down
+
+                  </h3>
+                  <p> footer will slide up and down as you hover on it and the animation will be back and forth.</p>
+                </div>
+
+                    <div class="panel-footer">
+                       <a href="#"><span class="badge badge-warning">40</span></a><br><br><br>
+                       <a href="#"><span class="badge badge-warning">40</span></a><br><br><br>
+                       <a href="#"><span class="badge badge-warning">40</span></a><br><br><br>
+                       <a href="#"><span class="badge badge-warning">40</span></a><br><br><br>
+                     </div>
+
+     </div>
+
+
+</div>
+
+            </div>
+        
+ 
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <img src="images/scenery.jpg">
+            </div>
+            <div class="col">
+                <img src="images/scenery.jpg">
+            </div>
+            <div class="col">
+                <img src="images/scenery.jpg">
+            </div>
+        </div>
+    </div>
+   
+ </section>
+
+
+
+
+
+
+
+
+    
+</center>
+
+</body>
+
+
+</html>

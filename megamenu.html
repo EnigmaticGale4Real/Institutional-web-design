@@ -1,0 +1,183 @@
+<html>
+    <head>
+        <title>
+            Mega-menu
+        </title>
+
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+        
+        <style>
+            li{
+                display: inline;
+                
+            }
+            </style>
+  <script>
+$(document).ready(function(){
+    $(".dropdown").hover(
+        function(){
+    $('.dropdown-menu',this).not('.in .dropdown-menu').stop(true,true).slideDown("400");
+    $(this).toggleClass('open');
+},
+function(){
+    $('.dropdown-menu',this).not('.in .dropdown-menu').stop(true,true).slideUp("400");
+    $(this).toggleClass('open');
+});
+});
+
+  </script>
+</head>
+
+<body>
+    <style>
+    
+        @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+        
+    </style>
+    
+       
+<div class="container bg-dark">
+    <div>
+        <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown bg-warning">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">My Account</a>
+                    
+                
+                    <ul class="dropdown-menu pull-right">
+                        <li class="dropdown-menu-item"><a href="#">My Profile</a></li>
+                        <li class="divider"></li>
+                        <li class="dropdown-menu-item"><a href="#">Login</a></li>
+                        <li class="dropdown-menu-item"><a href="#">Signup</a></li>
+                    </ul>
+                </li>
+                <li class="bg-warning"><a href="#">My cart(0 Items)</a></li>
+                
+                </ul> 
+
+    </div>
+            
+         
+        <div>
+
+            <ul class="nav navbar-nav navbar-left">
+                <li class="dropdown  bg-warning">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Home</a>
+        
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-menu-item"><a href="#">Flipcart</a></li>
+                        <li class="dropdown-menu-item"><a href="#">What's New</a></li>
+                        <li class="dropdown-menu-item"><a href="#">Holiday Special</a></li>
+                        <li class="dropdown-menu-item"><a href="#">Latest Products</a></li>
+                        <li class="dropdown-menu-item"><a href="#">Join Us</a></li>
+                    </ul>
+            </li>
+        
+    
+        
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle bg-warning" data-toggle="dropdown">Offers and Sales</a>
+
+                <ul class="dropdown-menu">
+                    <li class="dropdown-menu-item"><a href="#">Holiday Special</a></li>
+                    <li class="dropdown-menu-item"><a href="#">Monthly Special</a></li>
+                    <li class="dropdown-menu-item"><a href="#">Weekend Special</a></li>
+                    <li class="dropdown-menu-item"><a href="#">First Buy Discount</a></li>
+                    <li class="dropdown-menu-item"><a href="#">Regular customer Discount</a></li>
+                </ul>
+
+            </li>
+            
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle bg-warning" data-toggle="dropdown">Men</a>
+        
+                <ul class="dropdown dropdown-menu ">
+        
+                    <li class="col-sm-4">
+                        <ul style="boder:2px solid;">
+        
+                            <li class="dropdown-header text-center">Men's Collection</li>
+                            <li class="divider"></li>
+                            <li><a href="#">Here's is the collection<span class="glyphicon glyphicon-chevron-right pull-right"></span></a></li>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                        </ul>
+        
+                    </li>
+                    <li class="col-sm-4">
+                        <ul style="boder: 2px solid;">
+        
+                            <li class="dropdown-header text-center">Teenage Collection</li>
+                            <li class="divider"></li>
+                            <li class="dropdown-menu-item"><a href="#">sleeveless</a></li><br>
+                            <li class="dropdown-menu-item"><a href="#">perfume</a></li><br>
+                            <li class="dropdown-menu-item"><a href="#">smartphone cover</a></li><br>
+                            <li class="dropdown-menu-item"><a href="#">airpods</a></li><br>
+                            <li class="dropdown-menu-item"><a href="#">adidas</a></li><br>
+                        </ul>
+        
+                    </li>
+                    <li class="col-sm-4">
+                        <ul style="boder: 2px solid;">
+        
+                            <li class="dropdown-header text-center">Adult Collection</li>
+                            <li class="divider"></li>
+                            <li class="dropdown-menu-item"><a href="#">Formal wear</a></li><br>
+                            <li class="dropdown-menu-item"><a href="#">Tension</a></li><br>
+                            <li class="dropdown-menu-item"><a href="#">Stress</a></li><br>
+                            <li class="dropdown-menu-item"><a href="#">More stress</a></li><br>
+                            <li class="dropdown-menu-item"><a href="#">Ultra Stress</a></li><br>
+
+                        </ul>
+        
+                    </li>
+                   
+        
+                    <li></li>
+        
+        
+                </ul>
+        
+        
+        
+        
+            </li>
+        
+            <li class="dropdown bg-warning">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Women</a>
+
+                <ul class="dropdown-menu">
+                    <li class="dropdown-menu-item"><a href="#">2 piece</a></li>
+                    <li class="dropdown-menu-item"><a href="#">Lehnga</a></li>
+                    <li class="dropdown-menu-item"><a href="#">Skinny jeans</a></li>
+                    <li class="dropdown-menu-item"><a href="#">Latest Fashion</a></li>
+                    <li class="dropdown-menu-item"><a href="#">Casual</a></li>
+                </ul>
+
+            </li>
+        
+            </ul>
+        </div>
+     
+        
+      
+       
+
+</div>
+
+
+
+
+
+
+
+
+</body>
+
+</html>

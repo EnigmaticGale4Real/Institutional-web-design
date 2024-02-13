@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title> Timer and progress bar and slider
+        </title></head>
+
+        <body>
+
+
+            <script>
+                var i=1;
+                function s(){
+                    var a=document.getElementById("slider");
+                    a.src ="images/"+ i +".jpg";
+                    i++;
+                    if(i==12){
+                        i=1;
+                    }
+                }
+                setInterval(s,"1000")
+                </script>
+            <img src="images/1.jpg" id="slider">
+
+                <section>
+
+<script>
+
+var x=setInterval(mytimer,1000)
+function mytimer(){
+    const d=new Date();
+    document.getElementById("clock").innerHTML=d.toLocaleTimeString();
+}
+</script>
+<p id="clock"></p>
+                </section>
+
+                <button onclick="clearInterval(x)">stop</button>
+        </body>
+</html>

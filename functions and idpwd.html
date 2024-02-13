@@ -1,0 +1,118 @@
+<html>
+    <head>
+        <title>functions and idpwd
+        </title>
+
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+    </head>
+    
+   
+    <body>
+<script>
+//     $(document).ready(function(){
+//     $("button").click(function(){
+//         $("P").append("<input>")
+//     })
+// })
+
+
+// $(document).ready(function(){
+//     $("button").click(function(){
+//         $("#boot").empty()
+// })
+//     })
+
+// $(document).ready(function(){
+// $("button").click(function(){
+//     $("div").addClass("think")
+// })
+// })
+
+// $(document).ready(function(){
+// $("button").click(function(){
+//     $("div").toggleClass("think")
+// })
+// })
+
+// $(document).ready(function(){
+// $("button").click(function(){
+//     $("div").css({"border":"2px solid red","font-size":"200%"})
+// })
+// })
+
+// $(document).ready(function(){
+//     $("button").hover(function(){
+//         $("div").animate({"width":"+=45px","height":"+=45px"})
+//     })
+// })
+
+// $(document).ready(function(){
+//     $("button").click(function(){
+//         $("div").animate({"height":"23px","width":"toggle"},"fast")
+//     })
+// })
+
+
+                        
+                        $(function(){
+                        $('.pass_show').append('<span class="ptxt">Show</span>');  
+                        });
+                        
+            
+                        $(document).on('click','.pass_show .ptxt', function(){ 
+            
+                        $(this).text($(this).text() == "Show" ? "Hide" : "Show"); 
+            
+                        $(this).prev().attr('type', function(index, attr){return attr == 'password' ? 'text' : 'password'; }); 
+            
+                        });  
+                  
+
+</script>
+<style>
+    .think{
+     background-color: aqua;   
+    }
+</style>
+<div class="container think" id="boot" style="width: 200px;">
+    <p>you are bad </p>
+
+    
+</div>
+
+
+<div class="container">
+
+<div class="row">
+
+<div class="col-lg-4">
+
+    <label>Current Password</label>
+<div class="form-group pass_show">
+<input type="password" class="form-control" placeholder="Old-password" value="giggidygiggidygoo">
+</div>
+
+<label>New Password</label>
+<div class="form-group pass_show">
+    <input type="password" class="form-control" placeholder="New-password" value="giggidygiggidygoo">
+    </div>
+
+    <label>Re-type New-password</label>
+    <div class="form-group pass_show">
+        <input type="password" class="form-control" placeholder="Re-type New-password" value="giggidygiggidygoo">
+        </div>
+
+
+
+</div>
+
+</div>
+
+</div>
+<button>click</button>
+    </body>
+</html>
